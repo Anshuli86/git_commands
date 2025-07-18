@@ -18,5 +18,22 @@ public class Commands{
    	 public void gitPush() {
         System.out.println("git push -u origin main - Pushes commits to the 	remote main branch.");
     	}
+	public void gitPull() {
+        System.out.println("git pull - Fetches and merges changes from remote to local.");
+    	}
+
+	public static void main(String[] args) {
+		
+        	Commands c = new Commands();
+
+        	c.gitInit();
+       	 	c.gitStatus();
+       		c.gitAdd();
+        	c.gitCommit();
+        	c.gitRemote();
+        	c.gitPush();
+        	c.gitPull();
+        	c.gitClone();
+    	}
 
 }
